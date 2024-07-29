@@ -11,7 +11,7 @@ class Welcome extends StatefulWidget {
 
 class _WelcomeState extends State<Welcome> {
   void handleButtonPress() {
-    // Define what happens when the button is pressed
+    // ignore: avoid_print
     print('Button pressed!');
   }
 
@@ -26,7 +26,7 @@ class _WelcomeState extends State<Welcome> {
               decoration: BoxDecoration(
                 image: DecorationImage(
                   fit: BoxFit.fill,
-                  image: AssetImage('images/onboard_bg.png'),
+                  image: AssetImage('assets/images/onboard_bg.png'),
                 ),
               ),
             ),
@@ -79,7 +79,7 @@ class _WelcomeState extends State<Welcome> {
                   padding: const EdgeInsets.all(15.0),
                   child: SizedBox(
                     width: double.infinity,
-                    height: 50.0,
+                    height: 40.0,
                     child: Primarybutton(
                       text: "Continue",
                       onPressed: () => Navigator.push(
